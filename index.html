@@ -3,253 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <title>RevoU Academy Profile</title>
+    <title>Agus Adiyanto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <button onclick="inputNameFunction()" id="top-button" title="Go to top"><span class="material-symbols-outlined">
-        keyboard_double_arrow_up
-        </span></button>
-    <nav>
-        <!-- Logo -->
-        <div class="logo-icon">
-            <h1>RevoU Academy</h1>
+    <header>
+        <div class="nav-background">
+          <div class="logo">
+            <h4>RevoU Academy</h4>
+          </div>
+          <nav>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle"> 
+      
+            <label for="nav-toggle" class="nav-toggle-label">
+              <span></span> <span></span> <span></span> 
+            </label>
+            <ul class="nav-menu">
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#progress">Progress</a></li>
+              <li><a href="#learning">Learning</a></li>
+              <li><a href="#message-us">Message Us</a></li>
+            </ul>
+          </nav>
         </div>
-        <!-- Navbar -->
-        <section class="nav-menu" id="nav-menu">
-            <div class="nav-item">
-                <a href="#home" class="nav-link">Home</a>
-            </div>
-            <div class="nav-item">
-                <a href="#profile" class="nav-link">Our Profile</a>
-            </div>
-            <div class="nav-item">
-                <a href="#achievement" class="nav-link">Achievement</a>
-            </div>
-            <div class="nav-item">
-                <a href="#message-us" class="nav-link">Message Us</a>
-            </div>
-        </section>
-        <div class="burger" id="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-    </nav>
-    <!-- Main Content -->
-    <section>
-        <!-- Home -->
-        <section id="home">
-            <header class="header-container">
-                <div class="header-text">
-                    <h1>Hi <span id="username">Guest</span>!, Welcome To Website</h1>
-                    <h2><span>Empowering</span> Students to Become <span>The Next Generation</span> 
-                        <br>
-                        of <span>Innovators</span></h2>
-                        <div class="change-content">
-                            <input class="change-name"type="text" name="change-name" id="rename" placeholder="Enter Your Name (default Guest)" title="To Rename"/>
-                            <button class="change-button" id="rename-submit" type="submit" title="To Rename">Send</button>
-                        </div>
-                        </div>
-            </header>
-            <article class="banner-container">
-                <div class="banner-slide">
-                    <img src="/assets/banner-1.svg" alt="banner-1" />
-                </div>
-                <div class="banner-slide">
-                    <img src="/assets/banner-2.svg" alt="banner-2" />
-                </div>
-                <div class="banner-slide">
-                    <img src="/assets/banner-3.svg" alt="banner-3" />
-                </div>
-                <a class="prev" onclick="nextSlides(-1)">❮</a>
-                <a class="next" onclick="nextSlides(1)">❯</a>
-            </article>
-        </section>
-        <!-- Profile -->
-        <section id="profile" >
-            <h1 class="title">About<span> Our Academy</span></h1>
-            <div class="profile">
-                <div class="profile-content">
-                    <h3 class="copy">A leading academy focused on developing young talents in science and technology. We believe that every individual has the potential to become a future leader and innovator. 
-                        Therefore, we are committed to providing a supportive and inspiring learning environment where students can develop their talents, explore new ideas, and reach their full potential.</h3>
-                </div>
-            </div>
-        </section>
-        <!-- Vision & Mission -->
-        <section id="vision-mission" class="vision-mission">
-            <h1 class="title-2">Vision &<span> Mission</span></h1>
-            <div class="vision-mission-content">
-                <div class="vision-details">
-                    <h4>Vision</h4>
-                    <p>To be a leading science and technology education pioneer that empowers young talents to become future leaders and innovators.</p>
-                </div>
-                <div class="mission-details">
-                    <h4>Mission</h4>
-                    <div class="mission-items">
-                        <div class="mission">
-                            <h3>High Quality Education</h3>
-                            <p>We provide a comprehensive and innovative science and technology education, in line with the latest developments in the field of science and technology. Our curriculum is carefully designed to prepare students for the challenges and opportunities of the future. Our teachers are experienced and dedicated professionals, who are always ready to help students reach their full potential. Our modern facilities and infrastructure support an optimal teaching and learning process and provide an exceptional learning experience for students.</p>
-                        </div>
-                        <div class="mission">
-                            <h3>Positive Contribution to Society</h3>
-                            <p>We instill values such as integrity, cooperation, and social responsibility in our students. We develop the leadership, communication and entrepreneurial skills they need to become future leaders and innovators. We provide career training programs to help students succeed in the future and contribute positively to society.</p>
-                        </div>
-                        <div class="mission">
-                            <h3>Strong Networks</h3>
-                            <p>We build strong networks with industry and the community to provide students with practical work experience and prepare them for the world of work. We collaborate with companies and organizations in various sectors to develop research and development programs that are relevant to the needs of industry and society. We are committed to contributing to solving global problems and improving people's quality of life.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
+      </header>
+      
+    <main class="main-background">
 
+        <!--Hero Section-->
+        <section class="hero-background id="hero">
+            <div class="hero-container">
+                <div class="hero">
+                    <p>Hi <span id="username">Guest</span>!, Welcome to my website</p>
+                    <h1>Web Mini Project<br>Agus Adiyanto</h1>
+                    <p>Ini adalah mini project dari Fundamental<br>
+                        Course Software Engineering RevoU<br>
+                        setelah banyak belajar HTML, CSS, dan JS.<br>
+                        Ikuti akun LinkedIn saya</p>
+                        <button onclick="window.open('https://www.linkedin.com/in/agusadiyanto/', '_blank')"><b>Lets Connect</b></button>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/logo.png" alt="Logo RevoU">
+                </div>
+            </div>
         </section>
-        <!-- Facilities -->
-        <section id="facilities" class="facility">
-            <header>
-                <h1 class="title">Our <span>Facilities</span></h1>
-            </header>
-            <article class="facility-list">
-                    <div class="facility-item">
-                        <div class="front-part">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="100px" fill="#fff"><path d="M172-120q-41.78 0-59.39-39T124-230l248-280v-270h-52q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h320q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5h-52v270l248 280q29 32 11.39 71T788-120H172Zm70-90h476L558-395H402L242-210Zm-82 30h640L528-488v-292h-96v292L160-180Zm320-300Z"/></svg></span>
-                            <h4>Advanced Science Lab</h4>
-                        </div>
-                        <div class="back-part">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#fff"><path d="M172-120q-41.78 0-59.39-39T124-230l248-280v-270h-52q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h320q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5h-52v270l248 280q29 32 11.39 71T788-120H172Zm70-90h476L558-395H402L242-210Zm-82 30h640L528-488v-292h-96v292L160-180Zm320-300Z"/></svg></span>
-                            <h4>Advanced Science Lab</h4>
-                            <p>Equipped with the latest equipment and technology, our science labs allow students to conduct experiments and research in various fields of science, such as biology, chemistry, physics, and robotics</p>
-                        </div>
-                    </div>
-    
-                    <div class="facility-item">
-                        <div class="front-part">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="100px" fill="#fff"><path d="M160-120v-480l320-240 320 240v480H160Zm60-60h310v-145H220v145Zm370 0h150v-145H590v145ZM220-385h150v-145H220v145Zm210 0h310v-145H430v145ZM247-590h466L480-763 247-590Z"/></svg></span>
-                            <h4>Modern Classrooms</h4>
-                        </div>
-                        <div class="back-part">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#fff"><path d="M160-120v-480l320-240 320 240v480H160Zm60-60h310v-145H220v145Zm370 0h150v-145H590v145ZM220-385h150v-145H220v145Zm210 0h310v-145H430v145ZM247-590h466L480-763 247-590Z"/></svg></span>
-                            <h4>Modern Classrooms</h4>
-                            <p>Our classrooms are comfortably and inspiringly designed, equipped with multimedia technology and internet access to support interactive and effective learning.</p> 
-                                
-                        </div>
-                    </div>
-    
-                    <div class="facility-item">
-                        <div class="front-part">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="100px" fill="#fff"><path d="M343-420h225v-60H343v60Zm0-90h395v-60H343v60Zm0-90h395v-60H343v60Zm-83 400q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h560q24 0 42 18t18 42v560q0 24-18 42t-42 18H260Zm0-60h560v-560H260v560ZM140-80q-24 0-42-18t-18-42v-620h60v620h620v60H140Zm120-740v560-560Z"/></svg></span>
-                            <h4>Complete Library</h4>
-                        </div>
-                        <div class="back-part">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#fff"><path d="M343-420h225v-60H343v60Zm0-90h395v-60H343v60Zm0-90h395v-60H343v60Zm-83 400q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h560q24 0 42 18t18 42v560q0 24-18 42t-42 18H260Zm0-60h560v-560H260v560ZM140-80q-24 0-42-18t-18-42v-620h60v620h620v60H140Zm120-740v560-560Z"/></svg></span>
-                            <h4>Complete Library</h4>
-                            <p>Our library has an extensive collection of books, scholarly journals, and digital resources to assist students in their learning and research process.</p>
-                        </div>
-                    </div>
-    
-                    <div class="facility-item">
-                        <div class="front-part">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="100px" fill="#fff"><path d="m826-585-42-42 45-45-157-157-45 45-43-43 30-31q23-23 57-22.5t57 23.5l129 129q23 23 23 56.5T857-615l-31 30ZM346-104q-23 23-56.5 23T233-104L90-247q-17-17.38-17-42.69T90-332l44-44 43 42-45 45 157 157 45-45 42 43-30 30Zm397-308 85-85-331-331-85 85 331 331ZM463-132l86-86-331-331-86 86 331 331Zm9-248 109-109-92-92-109 109 92 92Zm33 290q-16.93 17-41.97 17Q438-73 421-90L90-421q-17-16.93-17-41.97Q73-488 90-505l85-86q17.38-17 42.69-17T260-591l77 77 110-110-77-77q-17-16.93-17-41.97Q353-768 370-785l85-86q17.38-17 42.69-17T540-871l331 331q17 17.38 17 42.69T871-455l-86 85q-16.93 17-41.97 17Q718-353 701-370l-77-77-110 110 77 77q17 17.38 17 42.69T591-175l-86 85Z"/></svg></span>
-                            <h4>Full Sports Facilities</h4>
-                        </div>
-                        <div class="back-part">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#fff"><path d="m826-585-42-42 45-45-157-157-45 45-43-43 30-31q23-23 57-22.5t57 23.5l129 129q23 23 23 56.5T857-615l-31 30ZM346-104q-23 23-56.5 23T233-104L90-247q-17-17.38-17-42.69T90-332l44-44 43 42-45 45 157 157 45-45 42 43-30 30Zm397-308 85-85-331-331-85 85 331 331ZM463-132l86-86-331-331-86 86 331 331Zm9-248 109-109-92-92-109 109 92 92Zm33 290q-16.93 17-41.97 17Q438-73 421-90L90-421q-17-16.93-17-41.97Q73-488 90-505l85-86q17.38-17 42.69-17T260-591l77 77 110-110-77-77q-17-16.93-17-41.97Q353-768 370-785l85-86q17.38-17 42.69-17T540-871l331 331q17 17.38 17 42.69T871-455l-86 85q-16.93 17-41.97 17Q718-353 701-370l-77-77-110 110 77 77q17 17.38 17 42.69T591-175l-86 85Z"/></svg></span>
-                            <h4>Full Sports Facilities</h4>
-                            <p>We have various sports facilities, such as basketball court, soccer field, swimming pool, and gym, to support the health and fitness of the students.</p>
-                        </div>
-                    </div>
+
+        <!--Progress Section-->
+        <section class="progress-container" id="progress">
+            <div class="progress">
+                <h1>Program Minicourse RevoU</h1>
+                <p>Ada 4 program unggulan yang dimiliki RevoU</p>
                 
-                
-            </article>
+                <div class="image-slider">
+                    <div class="slide">
+                        <img src="assets/MC_DA-10Days.png" alt="MC_DA - 10 Days">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/MC_DM-10Days.png" alt="MC_DM - 10 Days">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/MC_PM-10Days.png" alt="MC_PM - 10 Days">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/FC_SE-10Days.png" alt="FC_SE - 10 Days">
+                    </div>
+                    <!-- Add more slides as needed -->
+                    <button class="prev"></button>
+                    <button class="next"></button>
+                </div>
+            </div>
         </section>
-        <!-- Achievement -->
-        <section id="achievement">
-            <header>
-                <h1 class="title-2">Our <span>Achievement</span></h1>
-            </header>
-            <article class="achievement-list">
-                <div class="achievement-card">
-                    <img src="https://picsum.photos/200" alt="Library">
-                    <h3><a href="#achievement">Academic Excellence</a></h3>
-                    <p>Our students have won numerous prestigious national and international awards in science and technology.</p>
-                </div>
-                <div class="achievement-card">
-                    <img src="https://picsum.photos/200" alt="Science Lab">
-                    <h3><a href="#achievement">Sports Achievements</a></h3>
-                    <p>Our students have won various titles at the level of competition, e.g. local, regional, national level in various sports.</p>
-                </div>
-                <div class="achievement-card">
-                    <img src="https://picsum.photos/200" alt="Sports Facilities">
-                    <h3><a href="#achievement">Research and Innovation</a></h3>
-                    <p>Our research team has published hundreds of scientific articles in internationally renowned journals.</p>
-                </div>
-                <div class="achievement-card">
-                    <img src="https://picsum.photos/200" alt="Sports Facilities">
-                    <h3><a href="#achievement">Community Service</a></h3>
-                    <p>We actively organize community service programs to help communities around the academy.</p>
-                </div>
-            </article>
-        </section>
-        <!-- Message -->
-        <section id="message-us" class="message-us-section">
-            <header>
-                <h1 class="title">Message <span>Us</span></h1>
-            </header>
-            <section class="message-container">
-                <!-- Form -->
-                <section>
-                    <form id="message-form" class="form-content" action="" >
-                        <div class="form-group">
-                            <!--form for input name-->
-                            <label  class="label-input" for="name">Nama <span>:</span></label>
-                            <input type="text" name="" id="nama" placeholder="Masukkan Nama Anda"/><br>
-                        </div>
-                        <div class="form-group">
-                            <!--form for input date of birth-->
-                            <label class="label-input" for="tanggal-lahir">Tanggal Lahir <span>:</span></label>
-                            <input type="date" name="" id="tanggal-lahir" placeholder="Tanggal Lahir"/><br>
-                        </div>
-        
-                        <div class="form-group">
-                             <!--form for input gender-->
-                             <div class="gender-group">
-                                    <label class="label-input-radio" for="jenis-kelamin">Jenis Kelamin <span>:</span></label>
-                                    <input type="radio" name="jenis-kelamin" id="laki-laki" value="laki-laki"/>
-                                    <label for="laki-laki">Laki-Laki</label>
-                                    <input type="radio" name="jenis-kelamin" id="perempuan" value="perempuan"/>
-                                    <label for="perempuan">Perempuan</label><br>
-                             </div>
-                        </div>
-        
-                        <div class="form-group">
-                            <!--form for input messages-->
-                            <label class="label-input" for="pesan">Pesan <span>:</span></label>
-                            <textarea name="" id="pesan" placeholder="Masukkan Pesan Anda" rows="4"></textarea><br>
-                        </div>
-        
-                        <div class="form-group">
-                            <!--form submit-->
-                            <button type="submit">Kirim</button>
-                        </div>
-                       
-                    </form>
-                </section>
 
-                <!-- Result -->
-                <section class="result-container">
-                    <div class="form-result" id="message-value"></div>
-                </section>
-            </section>
+        <!--Learning Section-->
+        <section class="learning-background">
+            <div class="learning" id="learning">
+                <h2>Apa yang di pelajari</h2>
+                <div class="learning-items">
+                    <div class="learning-item">
+                        <div class="circle"><img src="assets/circle-3.png" alt="HTML Logo"></div>
+                        <p>HTML (Hyper Text Markup Language)</p>
+                    </div>
+                    <div class="learning-item">
+                        <div class="circle"><img src="assets/circle-1.png" alt="CSS Logo"></div>
+                        <p>CSS (Cascading Style Sheet)</p>
+                    </div>
+                    <div class="learning-item">
+                        <div class="circle"><img src="assets/circle-2.png" alt="JS Logo"></div>
+                        <p>JS (Java Script)</p>
+                    </div>
+                </div>
+            </div>
         </section>
-    </section>
+        
+        <!--Message Us Section-->
+        <section class="message-us" id="message-us">
+            <h2>Message Us</h2>
+            <div class="message-container">
+                <form onsubmit="return handleSubmit(event)">
+                    <label for="name">Nama</label>
+                    <input type="text" id="name" name="name" required> 
+                    <label for="dob">Tanggal Lahir</label>
+                    <input type="date" id="dob" name="dob" required>
+                    <label for="gender">Jenis Kelamin</label>
+                    <div class="gender">
+                        <input type="radio" id="male" name="gender" value="Laki-Laki" required>
+                        <label for="male">Laki-Laki</label>
+                        <input type="radio" id="female" name="gender" value="Perempuan" required>
+                        <label for="female">Perempuan</label>
+                    </div>
+                    <label for="message">Pesan</label>
+                    <textarea id="message" name="message" required></textarea> 
+                    <button type="submit">Submit</button>
+                </form>
+                <div class="info">
+                    <p><b>Tgl/Jam &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</b> </p> <br>
+                    <p><b>Nama &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</b> </p>
+                    <p><b>Tanggal Lahir &nbsp;:</b> </p>
+                    <p><b>Jenis Kelamin :</b> </p>
+                    <p><b>Pesan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</b> </p>
+                </div>
+            </div>
+        </section>
+        <button id="back-to-top-btn" title="Back to Top">&uarr;</button>
+        
+    </main>
 
-    <!-- Footer -->
-    <footer class="footer-container">
-            <p>&copy; 2024 RevoU Academy. Made by <b>Love</b>.</p>
-            <a href="https://agusadiyanto.net">Education illustrations by Storyset</a> | Image from <strong><a href="https://unsplash.com/@johnishappysometimes">John Schnobrich</a></strong> & <strong><a href="https://picsum.photos">Picsum</a></strong></span>
-            
+    <!--Footer Section-->
+    <footer>
+        <p>Created by <a href="http://agusadiyanto.net" target="_blank">Agus Adiyanto</a></p>
     </footer>
     <script src="js/script.js"></script>
 </body>
